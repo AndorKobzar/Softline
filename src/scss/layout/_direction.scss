@@ -1,8 +1,8 @@
 .direction {
     position: relative;
     color: var(--white);
-    // opacity: 0.5;
-
+    width: 100%;
+    overflow: hidden;
     &::before,
     &::after {
         display: block;
@@ -26,9 +26,6 @@
             background-image: url(../images/direction-#{$i}.png);
         }
     }
-
-    width: 100%;
-    overflow: hidden;
     @media (max-width: 1249.98px) {
         height: 60px;
         max-height: 60px;
@@ -81,15 +78,15 @@
     }
 
     .direction__content {
-        @media (max-width: 1249.98px) {
-            padding: 0 14px 14px;
-            text-align: left;
-        }
-
         font-family: 'Proxima Nova Condensed', sans-serif;
         font-weight: 400;
         letter-spacing: .005em;
         font-size: 16px;
+        transition: 0.3s;
+        @media (max-width: 1249.98px) {
+            padding: 0 14px 14px;
+            text-align: left;
+        }
         @media (min-width: 1250px) {
             padding-left: 20px;
             padding-right: 108px;
@@ -98,7 +95,6 @@
             font-size: 17px;
             text-align: left;
         }
-        transition: 0.3s;
     }
     @media (min-width: 1250px) {
         &:hover {

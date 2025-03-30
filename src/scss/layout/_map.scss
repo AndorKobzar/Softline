@@ -15,14 +15,12 @@
     margin-bottom: 99px;
     width: 1190px;
     height: 605px;
+    background-image: url(../images/map.svg);
+    background-repeat: no-repeat;
     @media (max-width: 1249.98px) {
         transform: scale(0.74);
         margin: -126px -150px -72px;
     }
-
-    background-image: url(../images/map.svg);
-    background-repeat: no-repeat;
-
     .map__city {
         position: absolute;
         display: none;
