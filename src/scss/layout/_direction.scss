@@ -1,0 +1,111 @@
+.direction {
+    position: relative;
+    color: var(--white);
+    // opacity: 0.5;
+
+    &::before,
+    &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -2;
+        background-position: top center;
+    }
+    @media (max-width: 1249.98px) {        
+        &::before {
+            background-color: #2D365399;
+            z-index: -1;
+        }
+    }
+    @for $i from 1 through 6 {
+        &:nth-child(#{$i})::after {
+            background-image: url(../images/direction-#{$i}.png);
+        }
+    }
+
+    width: 100%;
+    overflow: hidden;
+    @media (max-width: 1249.98px) {
+        height: 60px;
+        max-height: 60px;
+        transition: 0.3s;
+        &.open {
+            height: 240px;
+            max-height: 240px;
+        }
+    }
+    @media (min-width: 1250px) {
+        height: 260px;
+    }
+
+    .direction__header {
+        font-family: 'Proxima Nova Condensed', sans-serif;
+        font-weight: 600;
+        letter-spacing: .005em;
+        font-size: 20px;
+        line-height: 1.1;
+        text-align: left;
+        height: 60px;
+        transition: 0.3s;
+        @media (max-width: 1249.98px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-inline: 14px;
+            pointer-events: none;
+            &::after {
+                display: block;
+                content: '';
+                width: 29px;
+                height: 22px;
+                background: url(../icons/arrow-mission.svg) center no-repeat;
+                transition: transform 0.3s ease;
+            }
+        }
+        @media (min-width: 1250px) {
+            margin-top: 180px;
+            display: flex;
+            align-items: center;
+            padding-inline: 20px;
+            background-color: #2D365399;
+            height: 80px;
+            font-size: 24px;
+        }
+    }
+    &.open .direction__header::after {
+        transform: rotate(180deg);
+    }
+
+    .direction__content {
+        @media (max-width: 1249.98px) {
+            padding: 0 14px 14px;
+            text-align: left;
+        }
+
+        font-family: 'Proxima Nova Condensed', sans-serif;
+        font-weight: 400;
+        letter-spacing: .005em;
+        font-size: 16px;
+        @media (min-width: 1250px) {
+            padding-left: 20px;
+            padding-right: 108px;
+            background-color: #2D365399;
+            height: 180px;
+            font-size: 17px;
+            text-align: left;
+        }
+        transition: 0.3s;
+    }
+    @media (min-width: 1250px) {
+        &:hover {
+            .direction__header,
+            .direction__content {
+                transform: translateY(-180px);
+            }
+        }
+    }
+}

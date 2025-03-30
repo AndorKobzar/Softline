@@ -1,0 +1,42 @@
+.mission {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 186px;
+    background-image: url(../images/mission-bg-mobile.svg);
+    @media (min-width: 1250px) {
+        gap: 30px;
+        padding-inline: 78px;
+        height: 471px;
+        background-image: url(../images/mission-bg-desktop.svg);
+    }
+
+    .mission__header {
+        font-family: 'Proxima Nova Condensed', sans-serif;
+        font-weight: 600;
+        letter-spacing: .005em;
+        font-size: 28px;
+        @media (min-width: 1250px) {
+            font-size: 56px;
+        }
+        line-height: 1.3;
+        color: var(--white);
+    }
+
+    .mission__content {
+        font-family: 'Proxima Nova Condensed', sans-serif;
+        font-weight: 400;
+        letter-spacing: .005em;
+        font-size: 16px;
+        line-height: 1.3;
+        @media (min-width: 1250px) {
+            font-size: 32px;
+            line-height: 1.5
+        }
+        color: var(--white);
+    }
+}

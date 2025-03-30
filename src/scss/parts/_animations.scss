@@ -1,0 +1,35 @@
+/* Исходное состояние: прозрачность 0, смещение вниз */
+.fade-in, .slide-in-left, .slide-in-right {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Плавное появление снизу */
+.fade-in {
+    transform: translateY(20px);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Наезд слева */
+.slide-in-left {
+    transform: translateX(-30px);
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Наезд справа */
+.slide-in-right {
+    transform: translateX(30px);
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}

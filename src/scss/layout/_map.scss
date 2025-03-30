@@ -1,0 +1,93 @@
+.map-container {
+    @media (max-width: 1249.98px) {
+
+        width: 100%;
+        overflow: auto hidden;
+        height: 422px;
+    }
+}
+
+.map {
+    display: block;
+    position: relative;
+    margin-inline: auto;
+    margin-top: 88px;
+    margin-bottom: 99px;
+    width: 1190px;
+    height: 605px;
+    @media (max-width: 1249.98px) {
+        transform: scale(0.74);
+        margin: -126px -150px -72px;
+    }
+
+    background-image: url(../images/map.svg);
+    background-repeat: no-repeat;
+
+    .map__city {
+        position: absolute;
+        display: none;
+        &.active {
+            display: flex;
+        }
+        gap: 2px;
+        align-items: center;
+        flex-direction: column;
+        width: 110px;
+        height: 40px;
+        @media (max-width: 1249.98px) {
+            transform: scale(1.35);
+        }
+    }
+
+    .map__dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: var(--black);
+    }
+
+    .map__city-name {
+        font-weight: 400;
+        font-family: 'Proxima Nova Condensed', sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        line-height: 1.3;
+        color: var(--black);
+    }
+
+    .map__fs-14 {
+        font-size: 14px;
+    }
+
+    .map__fs-16 {
+        font-size: 16px;
+    }
+}
+
+.city-kaliningrad { left: -13px; top: 126px; }
+.city-spb { left: 99px; top: 132px; }
+.city-yaroslavl { left: 128px; top: 197px; }
+.city-moscow { left: 91px; top: 224px; }
+.city-voronezh { left: 43px; top: 246px; }
+.city-nnovgorod { left: 142px; top: 260px; }
+.city-belgorod { left: 40px; top: 276px; }
+.city-samara { left: 137px; top: 307px; }
+.city-kazan { left: 199px; top: 298px; }
+.city-izhevsk { left: 276px; top: 289px; }
+.city-perm { left: 329px; top: 299px; }
+.city-surgut { left: 382px; top: 311px; }
+.city-rostov { left: 31px; top: 319px; }
+.city-krasnodar { left: -1px; top: 378px; }
+.city-volgograd { left: 58px; top: 361px; }
+.city-ufa { left: 203px; top: 336px; }
+.city-ekaterinburg { left: 270px; top: 328px; }
+.city-orenburg { left: 169px; top: 364px; }
+.city-chelyabinsk { left: 268px; top: 362px; }
+.city-tyumen { left: 361px; top: 362px; }
+.city-omsk { left: 408px; top: 473px; }
+.city-novosibirsk { left: 460px; top: 454px; }
+.city-tomsk { left: 527px; top: 440px; }
+.city-krasnoyarsk { left: 584px; top: 456px; }
+.city-irkutsk { left: 640px; top: 488px; }
+.city-khabarovsk { left: 934px; top: 478px; gap: 0 !important; }
+.city-vladivostok { left: 921px; top: 575px; gap: 0 !important; }

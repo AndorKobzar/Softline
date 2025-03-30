@@ -1,0 +1,208 @@
+.offices {
+    position: relative;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 14px 5px 0;
+    @media (min-width: 1250px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 22px 70px 0;
+    }
+
+    .offices__toggle {
+        position: relative;
+        font-family: 'Proxima Nova Condensed', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        @media (min-width: 1250px) {
+            min-width: 184px;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0;
+        }
+        line-height: 1.3;
+        color: var(--black);
+        cursor: pointer;
+        &::after {
+            position: absolute;
+            display: block;
+            content: '';
+            width: 22px;
+            height: 11px;
+            background-image: url(../icons/arrow-mobile.svg);
+            @media (min-width: 1250px) {
+                width: 24px;
+                height: 24px;
+                background-image: url(../icons/arrow-desktop.svg);
+            }
+            top: 50%;
+            transform: translateY(-50%);
+            left: 126px;
+            @media (min-width: 1250px) {
+                top: 16px;
+                left: 160px;
+            }
+            transition: transform 0.3s ease;
+        }
+
+        &.open::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+    .offices__regions {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    
+        &>li {
+            &>ul {
+                display: none;
+            }
+            flex: none;
+            font-family: 'Proxima Nova Condensed', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: 0.02em;
+            color: var(--black);
+            @media (min-width: 1250px) {
+                font-size: 18px;
+            }
+            padding-bottom: 18px;
+            border-bottom: 2px solid transparent;
+            @media (min-width: 1250px) {
+                line-height: 1.8;
+                padding-bottom: 20px;
+                border-width: 3px;
+            }
+            cursor: pointer;
+            &:not(:last-child) {
+                margin-right: 16px;
+                @media (min-width: 1250px) {
+                    margin-right: 28px;
+                }
+            }
+            &.active {
+                color: var(--wine-red);
+                border-bottom: 2px solid var(--wine-red);
+                @media (min-width: 1250px) {
+                    border-width: 3px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1250px) {
+        .offices__toggle.open + .offices__regions {
+            pointer-events: none;
+            opacity: 10%;
+        }
+    }
+
+    @media (max-width: 1249.98px) {
+        .offices__toggle.open + .offices__regions {
+            & > li {
+                margin-right: 0;
+                color: var(--black);
+                border-bottom: 0;
+            }
+            & > li:first-child {
+                display: none;
+            }
+            & > li li.active {
+                color: var(--wine-red);
+            }
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            overflow-x: visible;
+            .offices__region {
+                display: inline-block;
+                &::after {
+                    display: inline-block;
+                    vertical-align: middle;
+                    content: '';
+                    width: 8px;
+                    height: 4px;
+                    background-image: url(../icons/subarrow.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: transform 0.3s ease;
+                    transform: translateX(3px);
+                }
+                
+                &.open {
+                    padding-bottom: 6px;
+                    &::after {
+                        transform: translateX(3px) rotate(180deg);
+                    }
+                }
+            }
+            .offices__region.open + .offices__cities {
+                & > li:not(:last-child) {
+                    padding-bottom: 6px;
+                }
+                padding: 0;
+                display: block;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .offices__desktop-regions {
+        display: none;
+    }
+    @media (min-width: 1250px) {
+        .offices__toggle.open ~ .offices__desktop-regions {
+            z-index: 1;
+            background-color: var(--white);
+            display: block;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+            padding: 30px 70px;
+            display: grid;
+            grid-template-columns: repeat(8, auto);
+            .offices__region {
+                display: inline-block;
+                margin-bottom: 10px;
+                cursor: pointer;
+                &:hover,
+                &.active {
+                    color: var(--wine-red);
+                }
+            }
+            & > li {
+                &:first-child {
+                    display: none;
+                }
+                font-family: 'Proxima Nova Condensed', sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 1.3;
+                letter-spacing: 0.02em;
+                color: var(--black);
+                cursor: pointer;
+                ul {
+                    padding: 0;
+                }
+                li {
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    &:hover,
+                    &.active {
+                        color: var(--wine-red);
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@use "parts/palette" as *;
+@use "parts/css-reset" as *;
+@use "parts/fonts" as *;
+@use "parts/icons" as *;
+@use "parts/animations" as *;
+
+// layout
+@use "layout/common" as *;
+@use "layout/nav" as *;
+@use "layout/lead" as *;
+@use "layout/stats" as *;
+@use "layout/offices" as *;
+@use "layout/header" as *;
+@use "layout/map" as *;
+@use "layout/mission" as *;
+@use "layout/directions" as *;
+@use "layout/direction" as *;
+@use "layout/package" as *;
+@use "layout/package-item" as *;
+@use "layout/life" as *;
+@use "layout/footer" as *;
+
+@use "parts/utils" as *;

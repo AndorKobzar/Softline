@@ -1,0 +1,58 @@
+/*
+
+100 — тонкое начертание (thin, hairline);
+200 — сверхсветлое (extra light, ultra light);
+300 — светлое (light);
+400 — нормальное (normal, regular, book);
+500 — среднее (medium);
+600 — полужирное (semi bold, demi bold);
+700 — жирное (bold);
+800 — сверхжирное (extra bold, ultra bold);
+900 — тяжёлое (black, heavy).
+
+*/
+
+
+
+/* Proxima Nova Condensed */
+@font-face {
+    font-family: 'Proxima Nova Condensed';
+    src: url('../fonts/Proxima_Nova_Condensed/proximanovacond_regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Condensed';
+    src: url('../fonts/Proxima_Nova_Condensed/proximanovacond_semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Condensed';
+    src: url('../fonts/Proxima_Nova_Condensed/proximanovacond_bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Condensed';
+    src: url('../fonts/Proxima_Nova_Condensed/proximanovacond_black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Condensed';
+    src: url('../fonts/Proxima_Nova_Condensed/proximanovacond_boldit.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Condensed';
+    src: url('../fonts/Proxima_Nova_Condensed/proximanovacond_blackit.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}

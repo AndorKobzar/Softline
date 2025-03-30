@@ -1,0 +1,16 @@
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 20px;
+    @media (min-width: 1250px) {
+        margin-top: 40px;
+    }
+
+    font-family: 'Proxima Nova Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+}

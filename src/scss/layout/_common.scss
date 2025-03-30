@@ -1,0 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+
+    // background-position: top center;
+    // background-repeat: no-repeat;
+    // background-image: url(../images/mobile.png);
+    // @media (min-width: 1250px) {
+    //     background-image: url(../images/desktop.png);
+    // }
+    // height: 5000px;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 290px;
+    @media (min-width: 1250px) {
+        max-width: 1250px;
+    }
+}
+
+.container-small {
+    margin: 0 auto;
+    max-width: 290px;
+    @media (min-width: 1250px) {
+        max-width: 1110px;
+    }
+}

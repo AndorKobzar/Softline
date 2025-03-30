@@ -1,0 +1,48 @@
+.nav {
+    border: 1px solid var(--border-gray);
+    display: flex;
+    flex-direction: column;
+    padding: 15px 4px 14px;
+    row-gap: 12px;
+    @media (min-width: 1250px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 29px 69px;
+    }
+    .nav__logo {
+        img {
+            display: block;
+            width: 125px;
+            height: 25px;
+            object-fit: cover;
+        }
+    }
+
+    .nav__menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, 21px);
+        @media (min-width: 1250px) {
+            grid-template-columns: repeat(4, auto);
+            grid-template-rows: auto;
+            column-gap: 19px;
+        }
+
+        a {
+            font-size: 14px;
+            @media (min-width: 1250px) {
+                font-size: 18px;
+            }
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            font-family: 'Proxima Nova Condensed', sans-serif;
+            line-height: 1.3;
+            &:hover {
+                color: var(--wine-red);
+            }
+        }
+    }
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softline</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav class="container nav">
+        <div class="nav__logo">
+            <img src="./icons/logo.svg" width="125" height="25" alt="Softline">
+        </div>
+        <ul class="nav__menu">
+            <li><a href="#cloud-solutions">Облачные решения</a></li>
+            <li><a href="#cybersecurity">Кибербезопасность</a></li>
+            <li><a href="#import-substitution">Импортозамещение</a></li>
+            <li><a href="#digital-transformation">Цифровая трансформация</a></li>
+        </ul>
+    </nav>
+    <div class="container lead">
+        <h2 class="lead__header">Softline</h2>
+        <div class="lead__text">
+            Ведущий поставщик IT-решений и сервисов.* Мы предлагаем комплексные IT-решения, облака, программное и аппаратное обеспечение, решения по цифровой трансформации и кибербезопасности, а также широкий спектр IT-услуг.
+        </div>
+    </div>
+    <div class="container stats">
+        <div class="stats__item">
+            <div class="stats__item-value"><span>&gt;</span> 30 лет</div>
+            <div class="stats__item-label">на IT-рынке</div>
+        </div>
+        <div class="stats__item">
+            <div class="stats__item-value">4600</div>
+            <div class="stats__item-label">сотрудников в России</div>
+        </div>
+        <div class="stats__item">
+            <div class="stats__item-value">25</div>
+            <div class="stats__item-label">городов России</div>
+        </div>
+        <div class="stats__item">
+            <div class="stats__item-value">2000<span>+</span></div>
+            <div class="stats__item-label">разработчиков</div>
+        </div>
+        <div class="stats__item">
+            <div class="stats__item-value">3000<span>+</span></div>
+            <div class="stats__item-label">сотрудников ежегодно<br /> проходят оценку и обучение</div>
+        </div>
+    </div>
+    <div class="container offices shadow">
+        <div class="offices__toggle">
+            Офисы Softline
+        </div>
+        <ul class="offices__regions">
+            <li data-region="all">
+                Все
+            </li>
+            <li data-region="Moscow">
+                Москва
+            </li>
+            <li data-region="Central">
+                <span class="offices__region">Центр</span>
+                <ul class="offices__cities">
+                    <li data-city="belgorod">Белгород</li>
+                    <li data-city="voronezh">Воронеж</li>
+                    <li data-city="yaroslavl">Ярославль</li>
+                </ul>
+            </li>
+            <li data-region="NorthWest">
+                <span class="offices__region">Северо-Запад</span>
+                <ul class="offices__cities">
+                    <li data-city="kaliningrad">Калининград</li>
+                    <li data-city="spb">С.-Петербург</li>
+                </ul>
+            </li>
+            <li data-region="South">
+                <span class="offices__region">Юг</span>
+                <ul class="offices__cities">
+                    <li data-city="volgograd">Волгоград</li>
+                    <li data-city="krasnodar">Краснодар</li>
+                    <li data-city="rostov">Ростов-на-Дону</li>
+                </ul>
+            </li>
+            <li data-region="Volga">
+                <span class="offices__region">Волга</span>
+                <ul class="offices__cities">
+                    <li data-city="kazan">Казань</li>
+                    <li data-city="nnovgorod">Н. Новгород</li>
+                    <li data-city="orenburg">Оренбург</li>
+                    <li data-city="samara">Самара</li>
+                    <li data-city="ufa">Уфа</li>
+                </ul>
+            </li>
+            <li data-region="Ural">
+                <span class="offices__region">Урал</span>
+                <ul class="offices__cities">
+                    <li data-city="ekaterinburg">Екатеринбург</li>
+                    <li data-city="izhevsk">Ижевск</li>
+                    <li data-city="perm">Пермь</li>
+                    <li data-city="surgut">Сургут</li>
+                    <li data-city="tyumen">Тюмень</li>
+                    <li data-city="chelyabinsk">Челябинск</li>
+                </ul>
+            </li>
+            <li data-region="Siberia">
+                <span class="offices__region">Сибирь</span>
+                <ul class="offices__cities">
+                    <li data-city="irkutsk">Иркутск</li>
+                    <li data-city="krasnoyarsk">Красноярск</li>
+                    <li data-city="novosibirsk">Новосибирск</li>
+                    <li data-city="omsk">Омск</li>
+                    <li data-city="tomsk">Томск</li>
+                </ul>
+            </li>
+            <li data-region="FarEast">
+                <span class="offices__region">Дальний восток</span>
+                <ul class="offices__cities">
+                    <li data-city="vladivostok">Владивосток</li>
+                    <li data-city="khabarovsk">Хабаровск</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="offices__desktop-regions shadow"></ul>
+    </div>
+    <div class="container map-container">
+        <div class="map">
+            <div class="map__city city-kaliningrad" data-city="kaliningrad" data-region="NorthWest">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Калининград</div>
+            </div>
+            <div class="map__city city-spb" data-city="spb" data-region="NorthWest">
+                <div class="map__dot"></div>
+                <div class="map__city-name map__fs-16">Санкт-Петербург</div>
+            </div>
+            <div class="map__city city-yaroslavl" data-city="yaroslavl" data-region="Central">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Ярославль</div>
+            </div>
+            <div class="map__city city-moscow" data-city="moscow" data-region="Moscow">
+                <div class="map__dot"></div>
+                <div class="map__city-name map__fs-14">Москва</div>
+            </div>
+            <div class="map__city city-voronezh" data-city="voronezh" data-region="Central">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Воронеж</div>
+            </div>
+            <div class="map__city city-nnovgorod" data-city="nnovgorod" data-region="Volga">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Н. Новгород</div>
+            </div>
+            <div class="map__city city-belgorod" data-city="belgorod" data-region="Central">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Белгород</div>
+            </div>
+            <div class="map__city city-samara" data-city="samara" data-region="Volga">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Самара</div>
+            </div>
+            <div class="map__city city-kazan" data-city="kazan" data-region="Volga">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Казань</div>
+            </div>
+            <div class="map__city city-izhevsk" data-city="izhevsk" data-region="Ural">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Ижевск</div>
+            </div>
+            <div class="map__city city-perm" data-city="perm" data-region="Ural">
+                <div class="map__dot"></div>
+                <div class="map__city-name map__fs-14">Пермь</div>
+            </div>
+            <div class="map__city city-surgut" data-city="surgut" data-region="Ural">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Сургут</div>
+            </div>
+            <div class="map__city city-rostov" data-city="rostov" data-region="South">
+                <div class="map__dot"></div>
+                <div class="map__city-name map__fs-14">Ростов-на-Дону</div>
+            </div>
+            <div class="map__city city-krasnodar" data-city="krasnodar" data-region="South">
+                <div class="map__dot"></div>
+                <div class="map__city-name map__fs-14">Краснодар</div>
+            </div>
+            <div class="map__city city-volgograd" data-city="volgograd" data-region="South">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Волгоград</div>
+            </div>
+            <div class="map__city city-ufa" data-city="ufa" data-region="Volga">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Уфа</div>
+            </div>
+            <div class="map__city city-ekaterinburg" data-city="ekaterinburg" data-region="Ural">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Екатеринбург</div>
+            </div>
+            <div class="map__city city-orenburg" data-city="orenburg" data-region="Volga">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Оренбург</div>
+            </div>
+            <div class="map__city city-chelyabinsk" data-city="chelyabinsk" data-region="Ural">
+                <div class="map__dot"></div>
+                <div class="map__city-name map__fs-14">Челябинск</div>
+            </div>
+            <div class="map__city city-tyumen" data-city="tyumen" data-region="Ural">
+                <div class="map__dot"></div>
+                <div class="map__city-name map__fs-14">Тюмень</div>
+            </div>
+            <div class="map__city city-omsk" data-city="omsk" data-region="Siberia">
+                <div class="map__dot"></div>
+                <div class="map__city-name map__fs-14">Омск</div>
+            </div>
+            <div class="map__city city-novosibirsk" data-city="novosibirsk" data-region="Siberia">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Новосибирск</div>
+            </div>
+            <div class="map__city city-tomsk" data-city="tomsk" data-region="Siberia">
+                <div class="map__dot"></div>
+                <div class="map__city-name map__fs-14">Томск</div>
+            </div>
+            <div class="map__city city-krasnoyarsk" data-city="krasnoyarsk" data-region="Siberia">
+                <div class="map__dot"></div>
+                <div class="map__city-name">Красноярск</div>
+            </div>
+            <div class="map__city city-irkutsk" data-city="irkutsk" data-region="Siberia">
+                <div class="map__dot"></div>
+                <div class="map__city-name map__fs-14">Иркутск</div>
+            </div>
+            <div class="map__city city-khabarovsk" data-city="khabarovsk" data-region="FarEast">
+                <div class="map__dot"></div>
+                <div class="map__city-name map__fs-16">Хабаровск</div>
+            </div>
+            <div class="map__city city-vladivostok" data-city="vladivostok" data-region="FarEast">
+                <div class="map__dot"></div>
+                <div class="map__city-name map__fs-16">Владивосток</div>
+            </div>
+        </div>
+           
+    </div>
+    <div class="container mission fade-in">
+        <h3 class="mission__header">Миссия Softline</h3>
+        <div class="mission__content">Мы помогаем организациям трансформироваться, работать эффективно и безопасно в условиях цифровой экономики.</div>
+    </div>
+    <div class="container directions">
+        <h3 class="directions__header">Направления бизнеса</h3>
+        <div class="directions__content">
+            <div class="direction slide-in-left">
+                <div class="direction__header">Решения Softline</div>
+                <div class="direction__content">
+                    ГК Softline предлагает клиентам собственную линейку оборудования (ПК, серверы, торговое оборудование и проч.), разработку программных продуктов, облачных решений, решений в области информационной безопасности.
+                </div>
+            </div>
+            <div class="direction slide-in-right" id="cybersecurity">
+                <div class="direction__header">Кибербезопасность</div>
+                <div class="direction__content">
+                    Softline обладает всеми необходимыми государственными лицензиями для организации проектов по информационной безопасности и аттестации. 
+                </div>
+            </div>
+            <div class="direction slide-in-left" id="import-substitution">
+                <div class="direction__header">Импортозамещение</div>
+                <div class="direction__content">
+                    ГК Softline обладает широчайшим портфелем решений и услуг для импортозамещения, включая ПО и оборудование собственного производства.
+                </div>
+            </div>
+            <div class="direction slide-in-right" id="cloud-solutions">
+                <div class="direction__header">Облачные решения</div>
+                <div class="direction__content">
+                    Softline использует современные облачные решения как российских, так и международных вендоров для масштабирования бизнеса своих клиентов. Подписки, услуги, трансформация.
+                </div>
+            </div>
+            <div class="direction slide-in-left" id="digital-transformation">
+                <div class="direction__header">Цифровая трансформация<br />и разработка ПО</div>
+                <div class="direction__content">
+                    Softline использует современные технологи и новые возможности для увеличения производительности бизнеса заказчика. В штате ГК Softline - 2000+ разработчиков, которые трансформируют ПО под нужды конкретного предприятия.
+                </div>
+            </div>
+            <div class="direction slide-in-right">
+                <div class="direction__header">Техническая поддержка Softline</div>
+                <div class="direction__content">
+                    200+ инженеров, 24 часа в сутки, 7 дней в неделю, 12 месяцев в году, сервисное партнерство с 30+ мировыми производителями.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-small package shadow">
+        <h3 class="package__header">Компенсационный пакет</h3>
+        <div class="package__items">
+            <div class="package-item fade-in">
+                <div class="package-item__icon">
+                    <img src="./icons/package/package-1.svg" />
+                </div>
+                <div class="package-item__text">ДМС</div>
+            </div>
+            <div class="package-item fade-in">
+                <div class="package-item__icon">
+                    <img src="./icons/package/package-2.svg" />
+                </div>
+                <div class="package-item__text">Выходной<br /> в день рождения</div>
+            </div>
+            <div class="package-item fade-in">
+                <div class="package-item__icon">
+                    <img src="./icons/package/package-3.svg" />
+                </div>
+                <div class="package-item__text">Корпоративная мобильная связь</div>
+            </div>
+            <div class="package-item fade-in">
+                <div class="package-item__icon">
+                    <img src="./icons/package/package-4.svg" />
+                </div>
+                <div class="package-item__text">Корпоративные скидки на спорт</div>
+            </div>
+            <div class="package-item fade-in">
+                <div class="package-item__icon">
+                    <img src="./icons/package/package-5.svg" />
+                </div>
+                <div class="package-item__text">LTI</div>
+            </div>
+        </div>
+        <hr class="package__delimiter">
+        <h4 class="package__subheader slide-in-right">Программа дополнительной мотивации</h4>
+        <h4 class="package__subheader package__subheader_wine slide-in-left">доплата 12% от суммы</h4>
+        <div class="package__items">
+            <div class="package-item fade-in">
+                <div class="package-item__icon">
+                    <img src="./icons/package/package-6.svg" />
+                </div>
+                <div class="package-item__text">Оргтехники</div>
+            </div>
+            <div class="package-item fade-in">
+                <div class="package-item__icon">
+                    <img src="./icons/package/package-1.svg" />
+                </div>
+                <div class="package-item__text">ДМС</div>
+            </div>
+            <div class="package-item fade-in">
+                <div class="package-item__icon">
+                    <img src="./icons/package/package-7.svg" />
+                </div>
+                <div class="package-item__text">Ипотеки</div>
+            </div>
+        </div>
+    </div>
+    <div class="container-small life">
+        <div class="life__head">
+            <h3>Корпоративная жизнь</h3>
+            <div class="life__arrows">
+                <div class="life__arrow life__arrow_prev"></div>
+                <div class="life__arrow life__arrow_next"></div>
+            </div>
+        </div>
+        <div class="life__body">
+            <div class="life__slider">
+                <div class="life__slide"><img src="images/slider/slide1.png" alt="Slide 1"></div>
+                <div class="life__slide"><img src="images/slider/slide2.png" alt="Slide 2"></div>
+                <div class="life__slide"><img src="images/slider/slide3.png" alt="Slide 3"></div>
+                <div class="life__slide"><img src="images/slider/slide4.png" alt="Slide 4"></div>
+            </div>
+        </div>
+        <div class="life__pagination"></div>
+    </div>
+    <footer class="footer">
+        <p>© 2025 Softline</p>
+    </footer>    
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

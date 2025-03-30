@@ -1,0 +1,38 @@
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 16px;
+    padding: 12px 2px 51px;
+    // Только мобильные (desktop скрываем)
+    @media (min-width: 1250px) {
+        display: none;
+    }
+
+    .stats__item {
+        &:last-child {
+            grid-column: span 2;
+        }
+    }
+
+    .stats__item-value {
+        text-align: center;
+        font-family: 'Proxima Nova Condensed', sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        span {
+            font-size: 30px;
+        }
+        line-height: 1.2;
+        color: var(--wine-red);
+    }
+
+    .stats__item-label {
+        text-align: center;
+        font-family: 'Proxima Nova Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        color: var(--black)
+    }
+}
